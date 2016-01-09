@@ -19,4 +19,5 @@ end
 
 ## USER SPECIFIED
 gem 'pg'
-gem "bower-rails"
+gem 'bower-rails'
+gem 'material_icons'

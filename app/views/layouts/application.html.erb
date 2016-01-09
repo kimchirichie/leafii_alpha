@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <% if @title %>
     <title><%= @title %></title>
   <% else %>
-    <title>Efolio!</title>
+    <title>Efolio</title>
   <% end %>
   <%= stylesheet_link_tag    'application', action_name+'/application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', action_name+'/application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  
 </head>
 <body>
 

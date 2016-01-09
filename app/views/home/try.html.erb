@@ -1,0 +1,36 @@
+<md-dialog ng-cloak>
+  <md-toolbar style="background-color:#1EAEDB;">
+    <div class="md-toolbar-tools">
+      <h2>Brand yourself NOW!</h2>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="cancel()">
+        <i title="close" class="material-icons">close</i>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-dialog-content>
+    <div class="md-dialog-content">
+      <form name="try" style="margin-bottom:0" novalidate>
+        <div>
+            <label>Your email</label>
+            <input class="u-full-width" name="email" type="email" placeholder="myemail@mailbox.com" ng-model="user.email" required>
+        </div>
+        <div>
+            <label>Your phone number</label>
+            <input class="u-full-width" name="phone" type="tel" placeholder="123 456 7890" ng-model="user.phone" required>
+        </div>
+        <div>
+          <label>Optional Message</label>
+          <textarea class="u-full-width" name="msg" placeholder="Hello, i want.." ng-model="user.msg"></textarea>
+        </div>
+      </form>
+    </div>
+  </md-dialog-content>
+
+  <md-dialog-actions>
+    <a class="button" ng-click="cancel()">Cancle</a>
+    <span flex></span>
+    <a class="button button-primary" ng-click="answer(try.$valid)">Submit</a>
+  </md-dialog-actions>
+</md-dialog>

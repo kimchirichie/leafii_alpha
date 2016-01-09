@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  root to: 'home#index'
+  root to: 'home#landing'
+
+  get '/try', to: 'home#try', as: 'try'
 
   scope '/see' do
     get '/carter', to: 'see#carter', as: 'carter'
