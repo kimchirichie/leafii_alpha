@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Efolio</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <% if @title %>
+    <title><%= @title %></title>
+  <% else %>
+    <title>Efolio!</title>
+  <% end %>
+  <%= stylesheet_link_tag    'application', action_name+'/application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', action_name+'/application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
