@@ -34,8 +34,7 @@ App.controller('LandingController',function($scope, $mdDialog, $mdMedia){
 			targetEvent: ev,
 			clickOutsideToClose:true,
 			fullscreen: useFullScreen
-		})
-		.then(function(answer) {
+		}).then(function(answer) {
 			console.log(answer);
 		}, function() {
 			console.log('dialog cancled');
