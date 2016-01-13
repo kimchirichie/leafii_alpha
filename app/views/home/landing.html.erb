@@ -1,61 +1,74 @@
-<div ng-controller="LandingController" id="popupContainer">	
-  <div class="section hero">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h4 class="hero-heading">Let everyone see you from <b>anywhere</b>. Build your brand now.</h4>
-          <a class="button button-primary" ng-click="showAdvanced($event)">Get Efolio</a>
+<div id="Landing">
+  <div ng-controller="LandingController" id="popupContainer">	
+    <div class="section hero">
+      <div class="container">
+        <div class="row">
+          <div class="one-half column">
+            <h4 class="hero-heading">Let everyone see you from <b>anywhere</b>. Build your brand now.</h4>
+            <a class="button button-primary" ng-click="showAdvanced($event)">Get Efolio</a>
+          </div>
+          <div class="one-half column phones">
+            <img class="phone" src="/iphone.png">
+            <img class="phone" src="/iphone.png">
+          </div>
         </div>
-        <div class="one-half column phones">
-          <img class="phone" src="/iphone.png">
-          <img class="phone" src="/iphone.png">
+      </div>
+    </div>
+
+    <div class="section values">
+      <div class="container">
+        <div class="row">
+          <div class="one-third column value">
+            <h2 class="value-multiplier">Broadcast</h2>
+            <h5 class="value-heading">Your Message</h5>
+            <p class="value-description">Make some noise, get heard!</p>
+          </div>
+          <div class="one-third column value">
+            <h2 class="value-multiplier">Tune</h2>
+            <h5 class="value-heading">Your Brand</h5>
+            <p class="value-description">Show them your style, impress 'em!</p>
+          </div>
+          <div class="one-third column value">
+            <h2 class="value-multiplier">Call In</h2>
+            <h5 class="value-heading">Your clients</h5>
+            <p class="value-description">Sell your product, and get paid!</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section get-help">
+      <div class="container">
+        <h3 class="section-heading">Need help getting started?</h3>
+        <p class="section-description"><b>Efolio</b> is a team of dedicated professionals, ready to bring you a customized personal site. Leave us with your email, and lets get started!</p>
+        <a class="button button-primary" ng-click="showAdvanced($event)">Sign me up!</a>
+      </div>
+    </div>
+
+    <div class="section categories">
+      <div class="container">
+        <h3 class="section-heading">Some of our works</h3>
+        <p class="section-description">Efolio provides a modern touch for your portfolio to stand out!</p>
+        <div class="row">
+          <div class="one-half column category">
+            <img class="u-max-full-width" src="/placeholder.png">
+          </div>
+          <div class="one-half column category">
+            <img class="u-max-full-width" src="/placeholder.png">
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section values">
-    <div class="container">
-      <div class="row">
-        <div class="one-third column value">
-          <h2 class="value-multiplier">67%</h2>
-          <h5 class="value-heading">Increased Exposure</h5>
-          <p class="value-description">Exposure rates spike with easier accessibility</p>
-        </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">90%</h2>
-          <h5 class="value-heading">Faster Results</h5>
-          <p class="value-description">Instant access to information results faster decisons from your audience</p>
-        </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">66%</h2>
-          <h5 class="value-heading">More Information</h5>
-          <p class="value-description">Personal site delivers more detailed information to potential clients and employers</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section get-help">
-    <div class="container">
-      <h3 class="section-heading">Need help getting started?</h3>
-      <p class="section-description">Efolio is a team of dedicated professionals, ready to bring you a customized personal site. Leave us with your email, and lets get started!</p>
-      <a class="button button-primary" ng-click="showAdvanced($event)">Sign me up!</a>
-    </div>
-  </div>
-
-  <div class="section categories">
-    <div class="container">
-      <h3 class="section-heading">Some of our works</h3>
-      <p class="section-description">Efolio provides a modern touch for your portfolio to stand you out from the crowd!</p>
-      <div class="row">
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="/placeholder.png">
-        </div>
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="/placeholder.png">
-        </div>
-      </div>
+  <div class="footer">
+    <div class="container align-middle">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a class="navbar-link" href="#">About</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
+      </ul>
+      <h5><b>powered by Efolio</b></h5>
+      <h6>Waterloo, ON &copy; 2016</h6>
     </div>
   </div>
 </div>

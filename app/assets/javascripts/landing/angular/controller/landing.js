@@ -6,7 +6,7 @@
  * Controls the Landing frame
  */
 
-App.controller('LandingController',function($scope, $mdDialog, $mdMedia){
+App.controller('LandingController',function($scope, $mdDialog, $mdMedia, $http){
 	
 	var dialogController = function($scope, $mdDialog) {
 
@@ -36,6 +36,13 @@ App.controller('LandingController',function($scope, $mdDialog, $mdMedia){
 			fullscreen: useFullScreen
 		}).then(function(answer) {
 			console.log(answer);
+			$http.post('/contact', answer)
+			.success(function successCallback(response) {
+				console.log('posting contact successful');
+			}).error(function errorCallback(response) {
+				alert('posting contact unsuccessful');
+				console.log(response)
+			});
 		}, function() {
 			console.log('dialog cancled');
 		});

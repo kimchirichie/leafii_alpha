@@ -13,16 +13,16 @@
     <div class="md-dialog-content">
       <form name="try" style="margin-bottom:0" novalidate>
         <div>
+            <label>Your name</label>
+            <input class="u-full-width" name="name" type="text" placeholder="Bob thebuilder.." ng-model="user.name" required>
+        </div>
+        <div>
             <label>Your email</label>
             <input class="u-full-width" name="email" type="email" placeholder="myemail@mailbox.com" ng-model="user.email" required>
         </div>
         <div>
             <label>Your phone number</label>
             <input class="u-full-width" name="phone" type="tel" placeholder="123 456 7890" ng-model="user.phone" required>
-        </div>
-        <div>
-          <label>Optional Message</label>
-          <textarea class="u-full-width" name="msg" placeholder="Hello, i want.." ng-model="user.msg"></textarea>
         </div>
       </form>
     </div>
