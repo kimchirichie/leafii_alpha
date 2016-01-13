@@ -1,0 +1,49 @@
+#Portfolio{
+	
+	h2 {
+		margin: 0;	
+	}
+
+	#quote {
+		font-family: 'Pacifico';
+	}
+
+	.toolbar {
+		width: 100%;
+		padding: 20px; 
+		border-bottom: solid thin black;
+
+	}
+
+	.Info {
+		width: 100%;
+		overflow: auto;
+	}
+
+	.footer {
+		width: 100%;
+		border-top: solid thin black;
+		position: absolute;
+	}
+
+	div {
+		border: solid;
+	}
+	img {
+		width:100%;
+	}
+
+
+
+}
+
+.align-middle{
+	text-align: center;	
+	ul{
+		display: inline-block;
+		li a{
+			margin: 0 25px 0 25px;
+		}
+	}
+}
+

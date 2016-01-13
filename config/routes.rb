@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   scope '/see' do
     get '/carter', to: 'see#carter', as: 'carter'
     get '/richard', to: 'see#richard', as: 'richard'
+    get '/minch', to: 'see#minch', as: 'minch'
   end
 
 end

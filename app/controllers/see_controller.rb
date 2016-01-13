@@ -7,4 +7,9 @@ class SeeController < ApplicationController
 	def richard
 		@title = 'Richard Sin'
 	end
+
+	def minch
+		@title = 'Carter Minshull'
+	end
+
 end
