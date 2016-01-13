@@ -38,6 +38,7 @@ App.controller('LandingController',function($scope, $mdDialog, $mdMedia, $http){
 			console.log(answer);
 			$http.post('/contact', answer)
 			.success(function successCallback(response) {
+				alert('Thank You! We will get in touch with you very soon!');
 				console.log('posting contact successful');
 			}).error(function errorCallback(response) {
 				alert('posting contact unsuccessful');
