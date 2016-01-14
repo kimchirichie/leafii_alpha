@@ -5,28 +5,22 @@ $darkgrey: #333333;
 $white: #f8f8f8;
 
 #Portfolio{
-
 	background-color: $lightgrey;
-
 	.quote {
 		font-family: Pacifico;
 	}
-
 	.bigQuotes {
 		font-size: 15px;
 		font-family: Pacifico;
 	}
-
 	.row {
-		margin-bottom: 10px;
+		margin: 10px 0 10px 0;
 	}
-
 	a {
 		cursor: pointer;
 	}
-
 	.feedback {
-		border-bottom: solid thin black;
+		display: none;
 		padding:10px;
 		margin-bottom: 35px;
 		background: white;
@@ -36,33 +30,27 @@ $white: #f8f8f8;
 		box-shadow: 10px 10px 5px #888888;
 
 	}
-
 	.footer {
 		width: 100%;
 		border-top: solid thin $black;
 		position: absolute;
 		text-align: center;
-
 	}
-
 	img {
 		width:100%;
 		min-height: 370px;
+		border-radius: 15px;
 	}
-
 	.footer-list {
 		display: inline-block;
 	    list-style: none;
 	    margin-bottom: 0; 
 	}
-
 	.footer-item {
 		position: relative;
 		float: left;
 		margin-bottom: 0; 
 	}
-
-
 	.footer-link{
 		text-transform: uppercase;
 	    font-size: 11px;
@@ -73,9 +61,7 @@ $white: #f8f8f8;
 	    line-height: 6.5rem;
 	    color: #222;
 	}
-
 }
-
 .align-middle{
 	text-align: center;	
 	ul{
@@ -85,26 +71,28 @@ $white: #f8f8f8;
 		}
 	}
 }
-
 .align-right{
 	text-align:right;
 }
-
 .space-verticle{
 	margin: 50px 0 50px 0;
 }
-
 .black-back{
 	padding-top: 50px;
 	background-color: $black;
 	color: $white;
 }
-
 .right{
 	float: right;
 }
-
 .left{
 	float: left;
 }
-
+@media(min-width: 750px){
+	a.anchor{
+		display: block;
+		position: relative;
+		top: -65px;
+		visibility: hidden;
+	}
+}
