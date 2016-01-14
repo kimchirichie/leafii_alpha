@@ -12,27 +12,32 @@ $white: #f8f8f8;
 		font-family: 'Pacifico';
 	}
 
-	.toolbar {
-		width: 100%;
-		padding: 20px; 
-		border-bottom: solid thin $black;
-
+	.row {
+		margin-bottom: 10px;
 	}
 
-	.Info {
-		width: 100%;
-		overflow: auto;
+	.feedback {
+		border: solid thin black;
+		padding:10px;
+		margin-bottom: 35px;
+		background: $medgrey;
+		color: white;
+		font-style: italic;
+
 	}
 
 	.footer {
 		width: 100%;
 		border-top: solid thin $black;
 		position: absolute;
+		text-align: center;
+
 	}
 
 	div {
 		// border: solid;
 	}
+
 	img {
 		width:100%;
 	}
@@ -89,4 +94,28 @@ $white: #f8f8f8;
 
 .left{
 	float: left;
+}
+
+.footer-list {
+	display: inline-block;
+    list-style: none;
+    margin-bottom: 0; 
+}
+
+.footer-item {
+	position: relative;
+	float: left;
+	margin-bottom: 0; 
+}
+
+
+.footer-link{
+	text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #222;
 }

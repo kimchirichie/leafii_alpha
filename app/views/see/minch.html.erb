@@ -11,16 +11,16 @@
 			<ul class="navbar-list">
 				<li class="navbar-item"><a class="navbar-link" href="#Profile">Profile</a></li>
 				<li class="navbar-item"><a class="navbar-link" href="#Experience">Experience</a></li>
-				<li class="navbar-item"><a class="navbar-link" href="#Resume">Resume</a></li>
+				<li class="navbar-item"><a class="navbar-link">Resume</a></li>
 			</ul>
 		</div>
 	</nav>
 
-	<div class="container">
+	<div id="Profile" class="container">
 		<div class="row align-middle">
 			<h4 class="quote space-verticle">"Show up. Show up on time. Show up on time, dressed to play."</h4>	
 		</div>
-		<div class="row">
+		<div class="row scroll">
 			<div class="five columns">
 				<img class="right-point" src="/minch/lab.jpg"/>
 			</div>
@@ -32,10 +32,13 @@
 				<h6><b>email</b>: carter@uwaterloo.ca <b>phone</b>: (888)-888-8888</h6>
 			</div>
 		</div>
-		<div class="row align-middle">
+		<div id="Experience" class="row align-middle">
 			<h2 class="space-verticle">Experiences</h2>
 		</div>
-		<div class="row">
+		<div class="row scroll">
+			<div class="five columns">
+				<img class="left-point" src="/minch/carter.png"/>
+			</div>
 			<div class="seven columns">
 				<h3>Christie Digital</h3>
 				<ul>
@@ -43,15 +46,17 @@
 					<li>Designed, coded and tested my own additions, bringing improved machine vision intelligence to the software AutoMap</li>
 					<li>Implemented Python and AutoHotkey scripts to maximize efficiency while debugging</li>
 				</ul>
-				<button class="button-primary">Employer feedback</button>
+				<button id="digitalOpen" class="button-primary right">Employer feedback</button>
 			</div>
-			<div class="five columns">
-				<img class="left-point" src="/minch/carter.png"/>
-			</div>
+		</div>
+		<div id="digitalFeedback" class="feedback">
+			<p>“Carter started the term with a fairly weak background in programming. Throughout the term he
+			showed an exceptional capacity to learn and improve that particular skill. He was able to successfully integrate two new third party libraries into our software. Each added a new dynamic to the software that was previously unavailable.”</p>
+			<span>-Derek Scott</span>
 		</div>
 		<div class="row">
 			<div class="five columns">
-				<img class="right-point" src="/minch/lab.jpg"/>
+				<img style="margin-top:20%" class="right-point" src="/minch/report.png"/>
 			</div>
 			<div class="seven columns">
 				<h3>IQC</h3>
@@ -60,10 +65,19 @@
 					<li>Exercised ingenuity, discipline and precision while building laser and cooperative thermal electric cooler controllerinvolving electronics, free-space and fibre-optics</li>
 					<li>Completed university-certified training: Lab Safety, WHIMIS, High-Power Laser Use, Cryogenics, Compressed gas, Electronic Soldering</li>
 				</ul>
-				<button class="button-primary right">Employer feedback</button>
+				<button id="iqcOpen" class="button-primary right">Employer feedback</button>
 			</div>
 		</div>
+		<div id="IQCFeedback" class="feedback">
+			<span>“He took every task we have given him with enthusiasm and efficiency”</span>
+			<br></br>
+			<p>“Carter has notably advanced the project, set up the crucial equipment, performed the most important measurements, and obtained useful results. This has allowed us to subsequently involve a postdoc and PhD student for a short additional time to quickly do additional measurements and complete this project. It is currently being finished with the hope that we will make a good journal publication.”</p>
+			<span>-Vadim Makarov</span>
+		</div>
 		<div class="row">
+			<div class="five columns">
+				<img class="left-point" src="/minch/carter.png"/>
+			</div>
 			<div class="seven columns">
 				<h3>Scarsin</h3>
 				<ul>
@@ -71,11 +85,13 @@
 					<li>Displayed exceptional written and verbal skills when training clients in basic use of I2E and when working with client managers to make model improvements</li>
 					<li>Clients were consistently impressed by the quality of service and the effectiveness of my reporting</li>
 				</ul>
-				<button class="button-primary">Employer feedback</button>
+				<button id="scarsinOpen" class="button-primary right">Employer feedback</button>
 			</div>
-			<div class="five columns">
-				<img class="left-point" src="/minch/carter.png"/>
-			</div>
+		</div>
+		<div id="scarsinFeedback" class="feedback">
+			<p>“His attention to detail and process and his sense of ownership over his actions and results has been of significant benefit in our project activities”</p>
+			<span>-Ray Martin</span>
+			<img class="left-point" src="/minch/scarsinRL.jpg">
 		</div>
 		<div class="row">
 			<div class="five columns">
@@ -89,20 +105,24 @@
 					<li>Worked as a Manager for several Waterloo open houses for prospective students</li>
 					<li>Effectively handled high stress on-call situations involving lifesaving first-aid and emergency services</li>
 				</ul>
-				<button class="button-primary right">Employer feedback</button>
 			</div>
 		</div>
 	</div>
 
 	<div class="footer">
-		<div class="container align-middle">
-			<ul class="navbar-list">
-				<li class="navbar-item"><a class="navbar-link" href="#Profile">z</a></li>
-				<li class="navbar-item"><a class="navbar-link" href="#Experience">Experience</a></li>
-				<li class="navbar-item"><a class="navbar-link" href="#Resume">Resume</a></li>
-			</ul>
-			<h5><b>powered by Efolio</b></h5>
-			<h6>Waterloo, ON &copy; 2016</h6>
-		</div>
+		<ul class="footer-list">
+			<li class="footer-item">
+				<a class="footer-link" href="#Profile">Profile</a>
+			</li>
+			<li class="footer-item">
+				<a class="footer-link" href="#Experience">Experience</a>
+			</li>
+			<li class="footer-item">
+				<a class="footer-link">Resume</a>
+			</li>
+		</ul>
+		<h6><b>powered by Efolio</b></h6>
+		<h6>Waterloo, ON &copy; 2016</h6>
 	</div>
+
 </div>
