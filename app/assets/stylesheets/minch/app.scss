@@ -9,20 +9,31 @@ $white: #f8f8f8;
 	background-color: $lightgrey;
 
 	.quote {
-		font-family: 'Pacifico';
+		font-family: Pacifico;
+	}
+
+	.bigQuotes {
+		font-size: 15px;
+		font-family: Pacifico;
 	}
 
 	.row {
 		margin-bottom: 10px;
 	}
 
+	a {
+		cursor: pointer;
+	}
+
 	.feedback {
-		border: solid thin black;
+		border-bottom: solid thin black;
 		padding:10px;
 		margin-bottom: 35px;
-		background: $medgrey;
-		color: white;
+		background: white;
+		color: black;
 		font-style: italic;
+		border-radius: 15px;
+		box-shadow: 10px 10px 5px #888888;
 
 	}
 
@@ -34,12 +45,33 @@ $white: #f8f8f8;
 
 	}
 
-	div {
-		// border: solid;
-	}
-
 	img {
 		width:100%;
+		min-height: 370px;
+	}
+
+	.footer-list {
+		display: inline-block;
+	    list-style: none;
+	    margin-bottom: 0; 
+	}
+
+	.footer-item {
+		position: relative;
+		float: left;
+		margin-bottom: 0; 
+	}
+
+
+	.footer-link{
+		text-transform: uppercase;
+	    font-size: 11px;
+	    font-weight: 600;
+	    letter-spacing: .2rem;
+	    margin: 0 10px 0 10px;
+	    text-decoration: none;
+	    line-height: 6.5rem;
+	    color: #222;
 	}
 
 }
@@ -68,26 +100,6 @@ $white: #f8f8f8;
 	color: $white;
 }
 
-.right-chevron{
-	-webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-}
-
-.left-chevron{
-	-webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-	clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-}
-
-.right-point{
-	-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
-
-.left-point{
-	-webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-	clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-}
-
 .right{
 	float: right;
 }
@@ -96,26 +108,3 @@ $white: #f8f8f8;
 	float: left;
 }
 
-.footer-list {
-	display: inline-block;
-    list-style: none;
-    margin-bottom: 0; 
-}
-
-.footer-item {
-	position: relative;
-	float: left;
-	margin-bottom: 0; 
-}
-
-
-.footer-link{
-	text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    margin: 0 10px 0 10px;
-    text-decoration: none;
-    line-height: 6.5rem;
-    color: #222;
-}
