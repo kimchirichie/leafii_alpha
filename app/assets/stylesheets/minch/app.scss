@@ -60,6 +60,10 @@ $white: #f8f8f8;
 		position: relative;
 		float: left;
 		margin-bottom: 0; 
+
+		@media(max-width: 750px){
+			width: 100%;
+		}
 	}
 	.footer-link{
 		text-transform: uppercase;
@@ -103,8 +107,9 @@ $white: #f8f8f8;
 
 .primary-button {
 	color: white;
-	background: grey;
+	background: $medgrey;
 }
+
 
 .left{
 	float: left;
