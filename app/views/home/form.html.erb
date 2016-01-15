@@ -1,0 +1,32 @@
+<%= @fields.to_json %>
+<div class="container" ng-controller="InfoController as ic">
+	<h2>Lets get you started!</h2>
+	<p>please fill out as much as you can</p>
+	<form>
+		<div class="row">
+			<div class="six columns">
+				<label>First Name</label>
+				<input class="u-full-width" type="text" ng-model="ic.first_name" placeholder="Bob">
+			</div>
+			<div class="six columns">
+				<label>Last Name</label>
+				<input class="u-full-width" type="text" ng-model="ic.last_name" placeholder="deBuilder">
+			</div>
+		</div>
+		<div class="row">
+			<div class="six columns">
+				<label>Email</label>
+				<input class="u-full-width" type="email" ng-model="ic.email" placeholder="test@efolio.com">
+			</div>
+			<div class="six columns">
+				<label>Phone Number</label>
+				<input class="u-full-width" type="tel" ng-model="ic.phone" placeholder="888 888 8888">
+			</div>
+		</div>
+		<button ng-click="ic.add()">ADD</button>
+		<button ng-click="ic.submit()">GOOO</button>
+		<div class="row" ng-repeat="field in ic.fields">
+			<p>{{field}}</p>
+		</div>
+	</form>
+</div>
