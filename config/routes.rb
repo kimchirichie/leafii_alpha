@@ -3,8 +3,7 @@ Rails.application.routes.draw do
   root to: 'home#landing'
 
   get '/try', to: 'home#try', as: 'try'
-  # post '/contact', to: 'home#contact', as: 'contact'
-  get '/submit', to: 'home#form', as: 'form'
+  # get '/submit', to: 'home#form', as: 'form'
   post '/submit', to: 'home#submit', as: 'submit'
 
   scope '/see' do

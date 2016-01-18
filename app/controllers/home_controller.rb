@@ -8,27 +8,22 @@ class HomeController < ApplicationController
 		render layout: nil
 	end
 
-	# def contact
-	# 	contact = Contact.new(contact_params)
-	# 	if contact.save then
-	# 		render json: {}, status: :ok
-	# 	else
-	# 		render json: contact.errors.full_message, status: :ok
-	# 	end
-	# end
-
 	def form
 		@fields = Infosheet.new()
 	end
 
 	def submit
-		puts params
-		render json: {}, status: :ok
+		info = Infosheet.new(info_params)
+		if info.save then
+			render json: {}, status: :ok
+		else
+			render json: info.errors.full_message, status: :ok
+		end
 	end
 
 	private
 
-	def contact_params
+	def info_params
 		params.require(:home).permit(:name, :email, :phone)
 	end
 
