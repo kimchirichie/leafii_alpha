@@ -14,7 +14,7 @@ $white: #f8f8f8;
 		font-family: Pacifico;
 	}
 	.row {
-		margin: 10px 0 10px 0;
+		margin: 20px 0 20px 0;
 	}
 	a {
 		cursor: pointer;
@@ -30,6 +30,16 @@ $white: #f8f8f8;
 		box-shadow: 10px 10px 5px #888888;
 
 	}
+
+	#scarsinFeedback {
+		height: 125px;
+
+		@media (max-width: 750px){
+			height: 200px;
+		}
+
+	}
+
 	.footer {
 		width: 100%;
 		border-top: solid thin $black;
@@ -50,6 +60,10 @@ $white: #f8f8f8;
 		position: relative;
 		float: left;
 		margin-bottom: 0; 
+
+		@media(max-width: 750px){
+			width: 100%;
+		}
 	}
 	.footer-link{
 		text-transform: uppercase;
@@ -85,9 +99,26 @@ $white: #f8f8f8;
 .right{
 	float: right;
 }
+
+.test {
+	position: relative;
+	top: 27%;
+}
+
+.primary-button {
+	color: white;
+	background: $medgrey;
+}
+
+
 .left{
 	float: left;
 }
+
+.no-margin {
+	margin: 0;
+}
+
 @media(min-width: 750px){
 	a.anchor{
 		display: block;
