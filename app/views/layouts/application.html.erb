@@ -5,8 +5,9 @@
   <% if @title %>
     <title><%= @title %></title>
   <% else %>
-    <title>Efolio</title>
+    <title>Leafii</title>
   <% end %>
+  <%= favicon_link_tag '/'+action_name+'/favicon.ico' %>
   <%= stylesheet_link_tag    'application', action_name+'/application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', action_name+'/application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>

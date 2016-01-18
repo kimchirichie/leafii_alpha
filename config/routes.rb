@@ -8,9 +8,10 @@ Rails.application.routes.draw do
   post '/submit', to: 'home#submit', as: 'submit'
 
   scope '/see' do
-    get '/carter', to: 'see#carter', as: 'carter'
+    # get '/carter', to: 'see#carter', as: 'carter'
     get '/richard', to: 'see#richard', as: 'richard'
     get '/minch', to: 'see#minch', as: 'minch'
+    get '/sinc', to: 'see#sinc', as: 'sinc'
   end
 
 end

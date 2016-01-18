@@ -48,7 +48,8 @@ $white: #f8f8f8;
 	}
 	img {
 		width:100%;
-		min-height: 370px;
+		height: auto;
+		// min-height: 370px;
 		border-radius: 15px;
 	}
 	.footer-list {
@@ -123,7 +124,7 @@ $white: #f8f8f8;
 	a.anchor{
 		display: block;
 		position: relative;
-		top: -65px;
+		top: -46px;
 		visibility: hidden;
 	}
 }
