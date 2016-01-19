@@ -31,6 +31,16 @@ $white: #f8f8f8;
 
 	}
 
+	.box {
+		position: relative;
+	}
+
+	.botRight {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
 	#scarsinFeedback{
 		height: 215px;
 

@@ -1,0 +1,60 @@
+// Main CSS FILE
+$tomato: #F44336;
+$lightgrey: #e0e0e0;
+$bluegrey: #607D8B;
+
+
+#Identity {
+
+
+	div {
+		border: thin solid black;
+	}
+
+	.navbar > div {
+		background: $tomato;
+	}
+
+	.footer {
+		width: 100%;
+		border-top: solid thin black;
+		position: absolute;
+		background: $bluegrey;
+		text-align: center;
+	}
+	img {
+		width:100%;
+		height: auto;
+		border-radius: 15px;
+	}
+	.footer-list {
+		display: inline-block;
+	    list-style: none;
+	    margin-bottom: 0; 
+	}
+	.footer-item {
+		position: relative;
+		float: left;
+		margin-bottom: 0; 
+
+		@media(max-width: 750px){
+			width: 100%;
+		}
+	}
+	.footer-link{
+		text-transform: uppercase;
+	    font-size: 11px;
+	    font-weight: 600;
+	    letter-spacing: .2rem;
+	    margin: 0 10px 0 10px;
+	    text-decoration: none;
+	    line-height: 6.5rem;
+	    color: $lightgrey;
+	}
+
+	.company {
+		color: $lightgrey;
+	}
+
+
+}

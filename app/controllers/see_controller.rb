@@ -16,4 +16,8 @@ class SeeController < ApplicationController
 		@title = 'Sinclair Minshull'
 	end
 
+	def zeng
+		@title = 'Talent Zeng'
+	end
+
 end

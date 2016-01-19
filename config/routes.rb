@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     get '/richard', to: 'see#richard', as: 'richard'
     get '/minch', to: 'see#minch', as: 'minch'
     get '/sinc', to: 'see#sinc', as: 'sinc'
+    get '/zeng', to: 'see#zeng', as: 'zeng'
+    
   end
 
 end
