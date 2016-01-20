@@ -8,7 +8,7 @@ $white: #f8f8f8;
 	background-color: $lightgrey;
 
 	hr {
-		border-top: 1px solid black;
+		border-top: 1px solid $black;
 		width: 80%;
 	}
 
@@ -24,26 +24,25 @@ $white: #f8f8f8;
 		margin-bottom: 0;
 	}
 
-	.quoteName {
-		text-align: right;
-	}
-
 	.bigQuotes {
 		font-size: 15px;
 		font-family: Pacifico;
 	}
+
 	.row {
 		margin: 20px 0 20px 0;
 	}
+
 	a {
 		cursor: pointer;
 	}
+
 	.feedback {
 		display: none;
 		padding:10px;
 		margin-bottom: 35px;
 		background: white;
-		color: black;
+		color: $black;
 		font-style: italic;
 		border-radius: 15px;
 		box-shadow: 10px 10px 5px #888888;
@@ -52,10 +51,6 @@ $white: #f8f8f8;
 
 	.box {
 		position: relative;
-	}
-
-	#digitalOpen {
-		clear:both;
 	}
 
 	.footer {
@@ -94,6 +89,17 @@ $white: #f8f8f8;
 	    line-height: 6.5rem;
 	    color: #222;
 	}
+
+	a.anchor{
+		display: block;
+		position: relative;
+		visibility: hidden;
+		top: 20px;
+
+		@media(min-width: 750px){
+			top: -30px;
+		}
+	}
 }
 .align-middle{
 	text-align: center;	
@@ -113,8 +119,13 @@ $white: #f8f8f8;
 	background-color: $black;
 	color: $white;
 }
+
 .right{
 	float: right;
+}
+
+.left{
+	float: left;
 }
 
 .test {
@@ -127,20 +138,6 @@ $white: #f8f8f8;
 	background: $medgrey;
 }
 
-
-.left{
-	float: left;
-}
-
 .no-margin {
 	margin: 0;
-}
-
-@media(min-width: 750px){
-	a.anchor{
-		display: block;
-		position: relative;
-		top: -65px;
-		visibility: hidden;
-	}
 }
